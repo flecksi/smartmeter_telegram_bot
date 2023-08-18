@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "smartmeter-telegram-bot"
+version = "0.1.0"
+description = ""
+authors = ["Andreas Fleck <fleckiiiiiiiimit8i+github@gmail.com>"]
+readme = "README.md"
+packages = [{include = "smartmeter_telegram_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pandas = "^2.0.3"
+python-dotenv = "^1.0.0"
+stromnetzgraz = "^0.1.7"
+python-telegram-bot = "^20.4"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.7.0"
+ipykernel = "^6.25.1"
+nbformat = "^5.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
